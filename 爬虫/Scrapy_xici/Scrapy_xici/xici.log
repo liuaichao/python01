@@ -1,0 +1,3465 @@
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '河南平顶山',
+ 'country': '中国',
+ 'ip': '182.122.189.15',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '1小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '辽宁葫芦岛',
+ 'country': '中国',
+ 'ip': '175.148.75.246',
+ 'isanonymous': '高匿',
+ 'livetime': '291天',
+ 'port': '1133',
+ 'types': 'HTTP',
+ 'yanzhengtime': '2小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '未知',
+ 'country': '未知',
+ 'ip': '171.80.0.146',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '2小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.166.134',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '3小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北仙桃',
+ 'country': '中国',
+ 'ip': '116.209.57.33',
+ 'isanonymous': '高匿',
+ 'livetime': '68天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '4小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.150.160',
+ 'isanonymous': '高匿',
+ 'livetime': '8天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '4小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.168.174',
+ 'isanonymous': '高匿',
+ 'livetime': '4天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.165.133',
+ 'isanonymous': '高匿',
+ 'livetime': '82天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.164.46',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '广东深圳市南山区',
+ 'country': '中国',
+ 'ip': '211.162.70.229',
+ 'isanonymous': '透明',
+ 'livetime': '55天',
+ 'port': '3128',
+ 'types': 'HTTP',
+ 'yanzhengtime': '1分钟前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '山东潍坊',
+ 'country': '中国',
+ 'ip': '119.176.85.226',
+ 'isanonymous': '透明',
+ 'livetime': '10天',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '4小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江杭州',
+ 'country': '中国',
+ 'ip': '183.129.207.88',
+ 'isanonymous': '透明',
+ 'livetime': '114天',
+ 'port': '11056',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '12小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '广东深圳',
+ 'country': '中国',
+ 'ip': '113.116.56.177',
+ 'isanonymous': '透明',
+ 'livetime': '161天',
+ 'port': '9000',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '16小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '广东珠海',
+ 'country': '中国',
+ 'ip': '14.115.104.184',
+ 'isanonymous': '透明',
+ 'livetime': '1分钟',
+ 'port': '808',
+ 'types': 'HTTP',
+ 'yanzhengtime': '23小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '北京',
+ 'country': '中国',
+ 'ip': '114.249.119.71',
+ 'isanonymous': '透明',
+ 'livetime': '109天',
+ 'port': '9000',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '1 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '广东深圳',
+ 'country': '中国',
+ 'ip': '163.125.66.217',
+ 'isanonymous': '透明',
+ 'livetime': '1分钟',
+ 'port': '9797',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '1 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '安徽合肥',
+ 'country': '中国',
+ 'ip': '58.243.50.184',
+ 'isanonymous': '透明',
+ 'livetime': '594天',
+ 'port': '53281',
+ 'types': 'HTTP',
+ 'yanzhengtime': '1 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '河北秦皇岛',
+ 'country': '中国',
+ 'ip': '124.237.83.14',
+ 'isanonymous': '透明',
+ 'livetime': '600天',
+ 'port': '53281',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '1 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '广西南宁',
+ 'country': '中国',
+ 'ip': '182.88.27.91',
+ 'isanonymous': '透明',
+ 'livetime': '1分钟',
+ 'port': '9797',
+ 'types': 'HTTP',
+ 'yanzhengtime': '2 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '广东深圳',
+ 'country': '中国',
+ 'ip': '112.95.189.167',
+ 'isanonymous': '透明',
+ 'livetime': '1分钟',
+ 'port': '9797',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '1小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '广西防城港',
+ 'country': '中国',
+ 'ip': '110.73.2.55',
+ 'isanonymous': '高匿',
+ 'livetime': '723天',
+ 'port': '8123',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '3小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北仙桃',
+ 'country': '中国',
+ 'ip': '116.209.57.33',
+ 'isanonymous': '高匿',
+ 'livetime': '68天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '4小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.150.160',
+ 'isanonymous': '高匿',
+ 'livetime': '8天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '4小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.165.133',
+ 'isanonymous': '高匿',
+ 'livetime': '82天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '广东珠海',
+ 'country': '中国',
+ 'ip': '14.115.104.133',
+ 'isanonymous': '透明',
+ 'livetime': '1分钟',
+ 'port': '9797',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '6小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北仙桃',
+ 'country': '中国',
+ 'ip': '116.209.58.69',
+ 'isanonymous': '高匿',
+ 'livetime': '64天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '7小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.133.157',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '9小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏宿迁',
+ 'country': '中国',
+ 'ip': '112.87.71.19',
+ 'isanonymous': '高匿',
+ 'livetime': '52天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '11小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '125.126.221.22',
+ 'isanonymous': '高匿',
+ 'livetime': '8天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '12小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '河南平顶山',
+ 'country': '中国',
+ 'ip': '182.122.189.15',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '1小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '辽宁葫芦岛',
+ 'country': '中国',
+ 'ip': '175.148.75.246',
+ 'isanonymous': '高匿',
+ 'livetime': '291天',
+ 'port': '1133',
+ 'types': 'HTTP',
+ 'yanzhengtime': '2小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北武汉',
+ 'country': '中国',
+ 'ip': '119.102.133.89',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '4小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北仙桃',
+ 'country': '中国',
+ 'ip': '116.209.55.252',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '125.104.50.177',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:14 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.129.31',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '7小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.154.160',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '7小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北武汉',
+ 'country': '中国',
+ 'ip': '119.102.133.171',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '7小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏宿迁',
+ 'country': '中国',
+ 'ip': '112.87.71.235',
+ 'isanonymous': '高匿',
+ 'livetime': '29天',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '8小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '河南濮阳',
+ 'country': '中国',
+ 'ip': '115.53.38.139',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '9小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北襄阳',
+ 'country': '中国',
+ 'ip': '121.63.198.84',
+ 'isanonymous': '高匿',
+ 'livetime': '2263天',
+ 'port': '6668',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '25 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广西桂林',
+ 'country': '中国',
+ 'ip': '121.31.193.132',
+ 'isanonymous': '高匿',
+ 'livetime': '2146天',
+ 'port': '6675',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '5 月前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '安徽宿州',
+ 'country': '中国',
+ 'ip': '117.69.98.216',
+ 'isanonymous': '高匿',
+ 'livetime': '2011天',
+ 'port': '6666',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '7 月前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '山东德州',
+ 'country': '中国',
+ 'ip': '113.121.245.231',
+ 'isanonymous': '高匿',
+ 'livetime': '1992天',
+ 'port': '6675',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '10 月前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江温州',
+ 'country': '中国',
+ 'ip': '218.73.130.59',
+ 'isanonymous': '高匿',
+ 'livetime': '1977天',
+ 'port': '6675',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '10 月前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广西防城港',
+ 'country': '中国',
+ 'ip': '110.73.30.246',
+ 'isanonymous': '高匿',
+ 'livetime': '1920天',
+ 'port': '6666',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '1 年前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广西玉林',
+ 'country': '中国',
+ 'ip': '171.38.64.67',
+ 'isanonymous': '高匿',
+ 'livetime': '1803天',
+ 'port': '6675',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '1 年前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '云南昆明市呈贡县',
+ 'country': '中国',
+ 'ip': '222.172.239.69',
+ 'isanonymous': '高匿',
+ 'livetime': '1763天',
+ 'port': '6666',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '1 年前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广东中山',
+ 'country': '中国',
+ 'ip': '116.28.106.165',
+ 'isanonymous': '高匿',
+ 'livetime': '1561天',
+ 'port': '6666',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '大约 2 年'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广西防城港',
+ 'country': '中国',
+ 'ip': '110.73.32.7',
+ 'isanonymous': '高匿',
+ 'livetime': '1489天',
+ 'port': '6666',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '大约 2 年'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.164.93',
+ 'isanonymous': '高匿',
+ 'livetime': '34天',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '1分钟前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏淮安',
+ 'country': '中国',
+ 'ip': '222.184.7.206',
+ 'isanonymous': '高匿',
+ 'livetime': '153天',
+ 'port': '40908',
+ 'types': 'HTTP',
+ 'yanzhengtime': '1小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北襄阳',
+ 'country': '中国',
+ 'ip': '111.177.113.81',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '2小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广西防城港',
+ 'country': '中国',
+ 'ip': '110.73.2.55',
+ 'isanonymous': '高匿',
+ 'livetime': '723天',
+ 'port': '8123',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '3小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北武汉',
+ 'country': '中国',
+ 'ip': '119.102.133.89',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '4小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.151.218',
+ 'isanonymous': '高匿',
+ 'livetime': '90天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '4小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北仙桃',
+ 'country': '中国',
+ 'ip': '116.209.55.252',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.138.7',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '125.104.50.177',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.134.210',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '6小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广东深圳',
+ 'country': '中国',
+ 'ip': '112.95.189.167',
+ 'isanonymous': '透明',
+ 'livetime': '1分钟',
+ 'port': '9797',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '1小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广东珠海',
+ 'country': '中国',
+ 'ip': '14.115.104.133',
+ 'isanonymous': '透明',
+ 'livetime': '1分钟',
+ 'port': '9797',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '6小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '贵州遵义',
+ 'country': '中国',
+ 'ip': '114.139.32.233',
+ 'isanonymous': '透明',
+ 'livetime': '1分钟',
+ 'port': '8118',
+ 'types': 'HTTP',
+ 'yanzhengtime': '14小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广东佛山',
+ 'country': '中国',
+ 'ip': '221.4.150.7',
+ 'isanonymous': '透明',
+ 'livetime': '29天',
+ 'port': '8181',
+ 'types': 'HTTP',
+ 'yanzhengtime': '18小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏镇江',
+ 'country': '中国',
+ 'ip': '222.186.45.104',
+ 'isanonymous': '透明',
+ 'livetime': '1分钟',
+ 'port': '57622',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '1 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广东深圳',
+ 'country': '中国',
+ 'ip': '163.125.66.161',
+ 'isanonymous': '透明',
+ 'livetime': '1分钟',
+ 'port': '9797',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '1 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江西南昌',
+ 'country': '中国',
+ 'ip': '218.64.69.79',
+ 'isanonymous': '透明',
+ 'livetime': '37天',
+ 'port': '8080',
+ 'types': 'HTTP',
+ 'yanzhengtime': '1 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广西南宁',
+ 'country': '中国',
+ 'ip': '180.141.90.172',
+ 'isanonymous': '透明',
+ 'livetime': '101天',
+ 'port': '53281',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '1 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江西新余',
+ 'country': '中国',
+ 'ip': '182.111.129.37',
+ 'isanonymous': '透明',
+ 'livetime': '40天',
+ 'port': '53281',
+ 'types': 'HTTP',
+ 'yanzhengtime': '2 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '北京',
+ 'country': '中国',
+ 'ip': '182.18.13.149',
+ 'isanonymous': '透明',
+ 'livetime': '387天',
+ 'port': '53281',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '2 天'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '未知',
+ 'country': '未知',
+ 'ip': '171.80.0.146',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '2小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.166.134',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '3小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.151.218',
+ 'isanonymous': '高匿',
+ 'livetime': '90天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '4小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.168.174',
+ 'isanonymous': '高匿',
+ 'livetime': '4天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.164.46',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北武汉',
+ 'country': '中国',
+ 'ip': '119.102.133.225',
+ 'isanonymous': '高匿',
+ 'livetime': '26天',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '7小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广东广州',
+ 'country': '中国',
+ 'ip': '183.63.101.62',
+ 'isanonymous': '高匿',
+ 'livetime': '601天',
+ 'port': '53281',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '8小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.149.128',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '10小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江杭州',
+ 'country': '中国',
+ 'ip': '183.129.207.88',
+ 'isanonymous': '透明',
+ 'livetime': '114天',
+ 'port': '11056',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '12小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '115.203.123.97',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTPS',
+ 'yanzhengtime': '13小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏淮安',
+ 'country': '中国',
+ 'ip': '222.184.7.206',
+ 'isanonymous': '高匿',
+ 'livetime': '153天',
+ 'port': '40908',
+ 'types': 'HTTP',
+ 'yanzhengtime': '1小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北襄阳',
+ 'country': '中国',
+ 'ip': '111.177.113.81',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '2小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '山东潍坊',
+ 'country': '中国',
+ 'ip': '119.176.85.226',
+ 'isanonymous': '透明',
+ 'livetime': '10天',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '4小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.138.7',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '5小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '浙江台州',
+ 'country': '中国',
+ 'ip': '183.148.134.210',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '6小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '湖北仙桃',
+ 'country': '中国',
+ 'ip': '116.209.52.14',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '7小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.166.229',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '7小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '山东',
+ 'country': '中国',
+ 'ip': '113.121.23.126',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '8小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '重庆',
+ 'country': '中国',
+ 'ip': '123.146.236.34',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '53281',
+ 'types': 'HTTP',
+ 'yanzhengtime': '9小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏南通',
+ 'country': '中国',
+ 'ip': '112.85.167.78',
+ 'isanonymous': '高匿',
+ 'livetime': '1分钟',
+ 'port': '9999',
+ 'types': 'HTTP',
+ 'yanzhengtime': '10小时前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广西北海',
+ 'country': '中国',
+ 'ip': '121.31.150.165',
+ 'isanonymous': '高匿',
+ 'livetime': '2080天',
+ 'port': '6666',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '4 月前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '山东潍坊',
+ 'country': '中国',
+ 'ip': '182.33.217.116',
+ 'isanonymous': '高匿',
+ 'livetime': '1980天',
+ 'port': '6666',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '6 月前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广西防城港',
+ 'country': '中国',
+ 'ip': '121.31.103.33',
+ 'isanonymous': '高匿',
+ 'livetime': '1982天',
+ 'port': '6666',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '9 月前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '山东德州',
+ 'country': '中国',
+ 'ip': '113.121.245.32',
+ 'isanonymous': '高匿',
+ 'livetime': '1921天',
+ 'port': '6667',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '10 月前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '广西防城港',
+ 'country': '中国',
+ 'ip': '110.73.33.207',
+ 'isanonymous': '高匿',
+ 'livetime': '1915天',
+ 'port': '6673',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '11 月前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '云南临沧',
+ 'country': '中国',
+ 'ip': '112.114.78.54',
+ 'isanonymous': '高匿',
+ 'livetime': '1813天',
+ 'port': '6673',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '1 年前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '云南临沧',
+ 'country': '中国',
+ 'ip': '112.114.76.176',
+ 'isanonymous': '高匿',
+ 'livetime': '1808天',
+ 'port': '6668',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '1 年前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '江苏宿迁市泗阳县',
+ 'country': '中国',
+ 'ip': '114.239.253.38',
+ 'isanonymous': '高匿',
+ 'livetime': '1571天',
+ 'port': '6666',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '大约 2 年'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '安徽铜陵',
+ 'country': '中国',
+ 'ip': '220.179.214.77',
+ 'isanonymous': '高匿',
+ 'livetime': '1556天',
+ 'port': '6666',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '大约 2 年'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-04-10 19:21:15 [scrapy.core.scraper] ERROR: Error processing {'address': '贵州遵义',
+ 'country': '中国',
+ 'ip': '114.139.48.8',
+ 'isanonymous': '高匿',
+ 'livetime': '1458天',
+ 'port': '6668',
+ 'types': 'socks4/5',
+ 'yanzhengtime': '2 年前'}
+Traceback (most recent call last):
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 30, in insert_mysql
+    cursor.execute(sql, values)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\pipelines.py", line 17, in process_item
+    Xicidaili_mysql.insert_mysql(country,ip,port,address,isanonymous,types,livetime,yanzhengtime)
+  File "D:\python程序\爬虫\Scrapy_xici\Scrapy_xici\my_pipelines\sql.py", line 36, in insert_mysql
+    conn.rollback()
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 429, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\THINKPAD\Anaconda3\lib\site-packages\pymysql\connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
