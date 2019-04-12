@@ -1,1 +1,1 @@
-python程序
+此仓库为pycharm练习代码及项目工程
